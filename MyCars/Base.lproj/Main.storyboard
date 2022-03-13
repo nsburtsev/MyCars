@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,143 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController interfaceStyle="light" id="BYZ-38-t0r" customClass="ViewController" customModule="MyCars" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myChoice" translatesAutoresizingMaskIntoConstraints="NO" id="b1S-EC-Q9x">
+                                <rect key="frame" x="132" y="460" width="150" height="145"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mark" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqx-Pt-HWR">
+                                <rect key="frame" x="188" y="77" width="38" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="MAV-ex-mBr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZdI-FT-8e3">
+                                <rect key="frame" x="175" y="124" width="64" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="1cY-Py-SHi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last time started:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xk6-oE-jv0">
+                                <rect key="frame" x="20" y="346" width="374" height="22"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eu1-ru-7Nj">
+                                <rect key="frame" x="345" y="346" width="49" height="22"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of trips:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCH-wN-Hag">
+                                <rect key="frame" x="20" y="376" width="125" height="22"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zFn-Vy-FBy">
+                                <rect key="frame" x="0.0" y="413" width="414" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="I3S-U1-wYA"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Lamborghini"/>
+                                    <segment title="Ferrari"/>
+                                    <segment title="Mercedes"/>
+                                    <segment title="NIssan"/>
+                                    <segment title="BMW"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedCtrlPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="UiC-o9-57a"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvv-rc-es4">
+                                <rect key="frame" x="16" y="806" width="112" height="32"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                <state key="normal" title="Start engine" backgroundImage="button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startEnginePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M7V-Ce-AQQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SL7-gn-ovy">
+                                <rect key="frame" x="282" y="806" width="112" height="32"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                <state key="normal" title="Rate" backgroundImage="button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="rateItPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P83-Jf-RTe"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lamborginiMurcielago" translatesAutoresizingMaskIntoConstraints="NO" id="doo-Ek-dvH">
+                                <rect key="frame" x="20" y="185" width="374" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="k0Y-Ta-gfj"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lqx-Pt-HWR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="08v-ls-r3L"/>
+                            <constraint firstItem="tvv-rc-es4" firstAttribute="baseline" secondItem="SL7-gn-ovy" secondAttribute="baseline" id="8bB-fF-xpq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="b1S-EC-Q9x" secondAttribute="bottom" constant="257" id="90F-PA-sqo"/>
+                            <constraint firstItem="Xk6-oE-jv0" firstAttribute="top" secondItem="doo-Ek-dvH" secondAttribute="bottom" constant="25" id="9Ir-5R-CaN"/>
+                            <constraint firstItem="Xk6-oE-jv0" firstAttribute="leading" secondItem="nCH-wN-Hag" secondAttribute="leading" id="Hbs-9K-hTs"/>
+                            <constraint firstItem="doo-Ek-dvH" firstAttribute="top" secondItem="ZdI-FT-8e3" secondAttribute="bottom" constant="32" id="IpB-s7-bAO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tvv-rc-es4" secondAttribute="bottom" constant="24" id="LCK-ZS-h1l"/>
+                            <constraint firstItem="zFn-Vy-FBy" firstAttribute="centerX" secondItem="b1S-EC-Q9x" secondAttribute="centerX" id="NPT-vF-cB3"/>
+                            <constraint firstItem="ZdI-FT-8e3" firstAttribute="centerX" secondItem="doo-Ek-dvH" secondAttribute="centerX" id="NqN-lX-vCd"/>
+                            <constraint firstItem="Xk6-oE-jv0" firstAttribute="centerX" secondItem="zFn-Vy-FBy" secondAttribute="centerX" id="Nv1-gh-rvK"/>
+                            <constraint firstItem="doo-Ek-dvH" firstAttribute="trailing" secondItem="Eu1-ru-7Nj" secondAttribute="trailing" id="Oaz-GF-7hs"/>
+                            <constraint firstItem="Xk6-oE-jv0" firstAttribute="trailing" secondItem="Eu1-ru-7Nj" secondAttribute="trailing" id="WQy-TR-Y3R"/>
+                            <constraint firstItem="Eu1-ru-7Nj" firstAttribute="baseline" secondItem="Xk6-oE-jv0" secondAttribute="firstBaseline" id="WoS-eR-M6r"/>
+                            <constraint firstItem="tvv-rc-es4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="XYY-h2-0lL"/>
+                            <constraint firstItem="doo-Ek-dvH" firstAttribute="leading" secondItem="Xk6-oE-jv0" secondAttribute="leading" id="ZNY-nF-quK"/>
+                            <constraint firstAttribute="trailing" secondItem="zFn-Vy-FBy" secondAttribute="trailing" id="cqP-zp-sUf"/>
+                            <constraint firstItem="zFn-Vy-FBy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iG1-Is-MLN"/>
+                            <constraint firstItem="nCH-wN-Hag" firstAttribute="top" secondItem="Xk6-oE-jv0" secondAttribute="bottom" constant="8" symbolic="YES" id="kdz-3L-pdv"/>
+                            <constraint firstItem="ZdI-FT-8e3" firstAttribute="top" secondItem="lqx-Pt-HWR" secondAttribute="bottom" constant="25" id="mgm-wC-mlI"/>
+                            <constraint firstItem="b1S-EC-Q9x" firstAttribute="top" secondItem="zFn-Vy-FBy" secondAttribute="bottom" constant="16" id="p4l-7a-mJ5"/>
+                            <constraint firstItem="zFn-Vy-FBy" firstAttribute="top" secondItem="Eu1-ru-7Nj" secondAttribute="bottom" constant="45" id="pgF-f2-2Gq"/>
+                            <constraint firstItem="doo-Ek-dvH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qhw-dd-Hyc"/>
+                            <constraint firstItem="lqx-Pt-HWR" firstAttribute="centerX" secondItem="ZdI-FT-8e3" secondAttribute="centerX" id="tds-Bs-Gfj"/>
+                            <constraint firstItem="Eu1-ru-7Nj" firstAttribute="trailing" secondItem="SL7-gn-ovy" secondAttribute="trailing" id="ymo-cN-bes"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="carImageView" destination="doo-Ek-dvH" id="Egq-ap-R6I"/>
+                        <outlet property="lastTimeStartedLabel" destination="Xk6-oE-jv0" id="ZkO-Yz-7so"/>
+                        <outlet property="markLabel" destination="lqx-Pt-HWR" id="0kI-Vl-VAO"/>
+                        <outlet property="modelLabel" destination="ZdI-FT-8e3" id="qal-Ue-kjE"/>
+                        <outlet property="myChoiceImageView" destination="b1S-EC-Q9x" id="AR1-yn-2pw"/>
+                        <outlet property="numberOfTripsLabel" destination="nCH-wN-Hag" id="wnf-cn-xZ5"/>
+                        <outlet property="ratingLabel" destination="Eu1-ru-7Nj" id="ZMX-48-KSG"/>
+                        <outlet property="segmentedControl" destination="zFn-Vy-FBy" id="b3C-tb-W6Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="515.94202898550725" y="139.28571428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button" width="112" height="32"/>
+        <image name="lamborginiMurcielago" width="210" height="101"/>
+        <image name="myChoice" width="150" height="150"/>
+    </resources>
 </document>
