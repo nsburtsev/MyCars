@@ -66,8 +66,8 @@
 				13EBB48827DE3C2200D5FC51 /* Assets.xcassets */,
 				13EBB48227DE3C2000D5FC51 /* Main.storyboard */,
 				13EBB48A27DE3C2200D5FC51 /* LaunchScreen.storyboard */,
-				13EBB48D27DE3C2200D5FC51 /* Info.plist */,
 				13E3C13E27E08086003AC0C0 /* data.plist */,
+				13EBB48D27DE3C2200D5FC51 /* Info.plist */,
 				13EBB48527DE3C2000D5FC51 /* MyCars.xcdatamodeld */,
 			);
 			path = MyCars;
