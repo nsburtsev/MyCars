@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13E3C13F27E08086003AC0C0 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13E3C13E27E08086003AC0C0 /* data.plist */; };
 		13EBB47D27DE3C2000D5FC51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EBB47C27DE3C2000D5FC51 /* AppDelegate.swift */; };
 		13EBB47F27DE3C2000D5FC51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EBB47E27DE3C2000D5FC51 /* SceneDelegate.swift */; };
 		13EBB48127DE3C2000D5FC51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EBB48027DE3C2000D5FC51 /* ViewController.swift */; };
@@ -14,10 +15,10 @@
 		13EBB48727DE3C2000D5FC51 /* MyCars.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 13EBB48527DE3C2000D5FC51 /* MyCars.xcdatamodeld */; };
 		13EBB48927DE3C2200D5FC51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13EBB48827DE3C2200D5FC51 /* Assets.xcassets */; };
 		13EBB48C27DE3C2200D5FC51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13EBB48A27DE3C2200D5FC51 /* LaunchScreen.storyboard */; };
-		13EBB49927DE4DF400D5FC51 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13EBB49827DE4DF400D5FC51 /* data.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13E3C13E27E08086003AC0C0 /* data.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
 		13EBB47927DE3C2000D5FC51 /* MyCars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13EBB47C27DE3C2000D5FC51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13EBB47E27DE3C2000D5FC51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,7 +28,6 @@
 		13EBB48827DE3C2200D5FC51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13EBB48B27DE3C2200D5FC51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13EBB48D27DE3C2200D5FC51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		13EBB49827DE4DF400D5FC51 /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = data.plist; path = "../../../../Downloads/[SwiftBook] Программирование на Swift/07. Изучаем основы Core Data (Swift 5)/06. Превью второго проекта/MyCars/MyCars/data.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 				13EBB48227DE3C2000D5FC51 /* Main.storyboard */,
 				13EBB48A27DE3C2200D5FC51 /* LaunchScreen.storyboard */,
 				13EBB48D27DE3C2200D5FC51 /* Info.plist */,
-				13EBB49827DE4DF400D5FC51 /* data.plist */,
+				13E3C13E27E08086003AC0C0 /* data.plist */,
 				13EBB48527DE3C2000D5FC51 /* MyCars.xcdatamodeld */,
 			);
 			path = MyCars;
@@ -133,7 +133,7 @@
 			files = (
 				13EBB48C27DE3C2200D5FC51 /* LaunchScreen.storyboard in Resources */,
 				13EBB48927DE3C2200D5FC51 /* Assets.xcassets in Resources */,
-				13EBB49927DE4DF400D5FC51 /* data.plist in Resources */,
+				13E3C13F27E08086003AC0C0 /* data.plist in Resources */,
 				13EBB48427DE3C2000D5FC51 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
