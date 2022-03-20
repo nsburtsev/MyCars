@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>item 0</key>
+<array>
 	<dict>
 		<key>rating</key>
 		<integer>5</integer>
@@ -18,7 +17,7 @@
 			<integer>232</integer>
 		</dict>
 		<key>mark</key>
-		<string>Lamborghini</string>
+		<string>Lamborgini</string>
 		<key>model</key>
 		<string>Murcielago</string>
 		<key>lastStarted</key>
@@ -28,7 +27,6 @@
 		<key>timesDriven</key>
 		<integer>1</integer>
 	</dict>
-	<key>item 1</key>
 	<dict>
 		<key>rating</key>
 		<integer>5</integer>
@@ -54,7 +52,6 @@
 		<key>timesDriven</key>
 		<integer>1</integer>
 	</dict>
-	<key>item 2</key>
 	<dict>
 		<key>rating</key>
 		<integer>5</integer>
@@ -80,7 +77,6 @@
 		<key>timesDriven</key>
 		<integer>1</integer>
 	</dict>
-	<key>item 3</key>
 	<dict>
 		<key>rating</key>
 		<integer>5</integer>
@@ -106,7 +102,6 @@
 		<key>timesDriven</key>
 		<integer>1</integer>
 	</dict>
-	<key>item 4</key>
 	<dict>
 		<key>rating</key>
 		<integer>5</integer>
@@ -132,5 +127,5 @@
 		<key>timesDriven</key>
 		<integer>1</integer>
 	</dict>
-</dict>
+</array>
 </plist>

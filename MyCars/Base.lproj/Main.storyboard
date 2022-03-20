@@ -60,7 +60,7 @@
                                     <constraint firstAttribute="height" constant="31" id="I3S-U1-wYA"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="Lamborghini"/>
+                                    <segment title="Lamborgini"/>
                                     <segment title="Ferrari"/>
                                     <segment title="Mercedes"/>
                                     <segment title="NIssan"/>
